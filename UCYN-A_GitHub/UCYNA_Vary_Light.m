@@ -269,3 +269,27 @@ end
 save L_range.mat L_range
 save Nfix.mat Nfix
 
+
+%% Plot N2 fixation rate 
+
+plot(L_range,Nfix,'Color','b','LineWidth',2);
+hold on;
+
+%% Set plot requirements
+
+xlim([0 800])
+xlabel('PAR (\mumol m^{-2} s^{-1})')
+xticks(0:200:800)
+xticklabels({'0','200','400','600','800'})
+
+ylim([0 10])
+ylabel('N_2 fixation rate (fmol N cell^{-1} d^{-1})')
+yticks(0:2:10)
+yticklabels({'0','2','4','6','8','10'})
+
+set(gca,'TickLength',[0.015, 0.01])
+set(gca,'FontSize',13)
+
+box on
+hold off;
+
