@@ -7,3 +7,9 @@ The generation of Fig. 3a requires three scripts in the 'UCYN-A_GitHub' folder, 
 (3) Then run 'Plot_Nfix.m' to generate the plot.
 
 We also need 'viscocity_temperature_Jumars_1993.csv' file to run (1) and (2).
+
+------------------------------
+
+To generate Fig. 4a, run 'UCYNA_Vary_Temperature.m' to calculate N2​ fixation rates across different temperatures. This will create the temperature vs. N2​ fixation rate plot in about five seconds. Reducing the step size in T_range from -5:5:35 to -5:0.1:35 will significantly increase the runtime but will more accurately capture the shape shown in Fig. 4a.
+
+Please note that the script outputs actual N2​ fixation rates, whereas Fig. 4a presents normalized rates for easier comparison with the data, and the code provided does not include the shaded region displayed in Fig. 4a.
